@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Blessing For My Little Sister</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="tailwind.config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&amp;family=Cormorant:ital,wght@0,600;0,700;1,600&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased selection:bg-blush-soft selection:text-light-on-surface overflow-x-hidden">
+
+  <!-- Floating Flower Petals & Golden Sparkles -->
+  <div id="petals-layer" aria-hidden="true" class="fixed inset-0 pointer-events-none overflow-hidden z-10">
+    <svg class="petal w-4 h-4 text-blush-petal" style="left: 9%; animation-duration: 13s; animation-delay: 0s;" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C9 6 6 10 6 14a6 6 0 0 0 12 0c0-4-3-8-6-12z"></path>
+    </svg>
+    <svg class="petal w-3 h-3 text-champagne-gold" style="left: 26%; animation-duration: 16s; animation-delay: 2.2s;" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"></path>
+    </svg>
+    <svg class="petal w-5 h-5 text-blush-soft" style="left: 50%; animation-duration: 14s; animation-delay: 1s;" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C9 6 6 10 6 14a6 6 0 0 0 12 0c0-4-3-8-6-12z"></path>
+    </svg>
+    <svg class="petal w-4 h-4 text-lavender-soft" style="left: 74%; animation-duration: 15s; animation-delay: 3.5s;" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C9 6 6 10 6 14a6 6 0 0 0 12 0c0-4-3-8-6-12z"></path>
+    </svg>
+    <svg class="petal w-3 h-3 text-champagne-gold" style="left: 89%; animation-duration: 12s; animation-delay: 1.5s;" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"></path>
+    </svg>
+  </div>
+
+  <!-- Floating Music Toggle (Default OFF) -->
+  <div class="fixed top-4 right-4 z-50">
+    <!-- COMPONENT: button-icon -->
+    <button id="music-toggle-btn" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" type="button" aria-label="Toggle background music" aria-pressed="false" class="inline-flex items-center justify-center gap-gutter-xs px-gutter-md h-11 rounded-full bg-cream-paper/95 text-light-primary border border-champagne-gold/60 shadow-sm hover:bg-champagne-mist focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light-primary active:scale-95 transition-transform duration-state-change ease-state-change">
+      <span id="music-icon" class="material-symbols-outlined text-headline-md" aria-hidden="true">music_off</span>
+      <span id="music-label" class="font-label text-label-sm" data-design-text-token="label-sm">Music Off</span>
+    </button>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- 1. OPENING WEDDING BLESSINGS SCREEN                       -->
+  <!-- ========================================================= -->
+  <section id="opening-blessings" class="relative min-h-[884px] flex flex-col items-center justify-center px-page-margin py-gutter-xl overflow-hidden" data-stitch-vh="min-h-[884px]===min-h-screen">
+    <img src="https://lh3.googleusercontent.com/aida/ALJJyrCch2RfKCuBqB4fqdl0kX9OWSjpYFp0LrwfbZ67T1XV2NyjoE-MAlApevd8t8FDJdf3bJga8aLL5dhubZ9oCznMkiRxI0UnI0MUpPk9oAs5jbqUldG3ZbeT7hZT9LH2DbMRDSknElzGNMqaVEcVrocaa6xoMqn0fv7VU544e1bomcSaBX9HEgL_eeBotRg9bfW0b8XnZZRSjA3ErqzerWhdvzVJsAavuZkEXPAcXb7g-6FfL4lbhebhSw8ieN7QJcOyOcsVvhRE" alt aria-hidden="true" class="absolute inset-0 w-full h-full object-cover">
+    <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-champagne-mist/85 via-cream-paper/85 to-blush-mist/85"></div>
+
+    <!-- Glowing Golden Particles -->
+    <div aria-hidden="true" class="absolute inset-0 pointer-events-none max-w-3xl mx-auto">
+      <span class="material-symbols-outlined text-champagne-gold absolute top-14 left-6 animate-twinkle">auto_awesome</span>
+      <span class="material-symbols-outlined text-rose-gold absolute top-24 right-8 animate-twinkle" style="animation-delay: 1s;">local_florist</span>
+      <span class="material-symbols-outlined text-champagne-gold absolute bottom-20 left-10 animate-twinkle" style="animation-delay: 0.6s;">spark</span>
+      <span class="material-symbols-outlined text-rose-gold absolute bottom-24 right-8 animate-float-slow">favorite</span>
+    </div>
+
+    <!-- Wedding Invitation Framed Card -->
+    <div class="relative z-20 w-full max-w-xl mx-auto bg-cream-paper/90 border-2 border-champagne-gold/50 rounded-xl p-gutter-lg sm:p-gutter-xl shadow-xl flex flex-col items-center text-center gap-gutter-lg">
+      <!-- Inner Gold Hairline Frame -->
+      <div aria-hidden="true" class="absolute inset-3 border border-champagne-gold/30 rounded-lg pointer-events-none"></div>
+
+      <!-- Animated Gift Box -->
+      <div id="gift-box-wrapper" class="relative w-36 h-36 flex items-center justify-center animate-gift-pulse">
+        <div class="gift-glow absolute inset-2 rounded-full bg-champagne-mist blur-xl opacity-70 transition-all duration-surface-enter"></div>
+        <div id="photo-burst" class="photo-burst" aria-hidden="true">
+          <img class="gift-photo" src="photos/memory-1.jpeg" alt="" style="--burst-x: -112px; --burst-y: -76px; --burst-r: -18deg; --burst-delay: 0ms;">
+          <img class="gift-photo" src="photos/memory-2.jpeg" alt="" style="--burst-x: -70px; --burst-y: -132px; --burst-r: -9deg; --burst-delay: 70ms;">
+          <img class="gift-photo" src="photos/memory-3.jpeg" alt="" style="--burst-x: 4px; --burst-y: -145px; --burst-r: 8deg; --burst-delay: 130ms;">
+          <img class="gift-photo" src="photos/memory-4.jpeg" alt="" style="--burst-x: 82px; --burst-y: -125px; --burst-r: 15deg; --burst-delay: 190ms;">
+          <img class="gift-photo" src="photos/memory-5.jpeg" alt="" style="--burst-x: 118px; --burst-y: -68px; --burst-r: 21deg; --burst-delay: 250ms;">
+          <img class="gift-photo" src="photos/memory-6.jpeg" alt="" style="--burst-x: 0px; --burst-y: -55px; --burst-r: -4deg; --burst-delay: 310ms;">
+        </div>
+        <svg viewBox="0 0 160 160" class="w-32 h-32 relative z-10 drop-shadow-md" aria-hidden="true">
+          <rect x="30" y="68" width="100" height="72" rx="10" fill="#FFFDF9" stroke="#C8A26A" stroke-width="2"></rect>
+          <rect x="30" y="68" width="100" height="72" rx="10" fill="#FFECEF" opacity="0.55"></rect>
+          <rect x="70" y="68" width="20" height="72" fill="#B76E79"></rect>
+          <g class="gift-lid">
+            <rect x="22" y="48" width="116" height="24" rx="8" fill="#F7EFE2" stroke="#C8A26A" stroke-width="1.5"></rect>
+            <rect x="70" y="48" width="20" height="24" fill="#B76E79"></rect>
+            <path d="M80 48 C65 24, 38 30, 48 48 Z" fill="#9B3A58"></path>
+            <path d="M80 48 C95 24, 122 30, 112 48 Z" fill="#9B3A58"></path>
+            <circle cx="80" cy="46" r="7" fill="#C8A26A"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="relative z-10 flex flex-col items-center gap-gutter-sm">
+        <h1 data-component-id="typography-display" data-component-type="typography" data-component-variant="display" data-design-text-token="display-lg" class="font-display text-display-lg-mobile md:text-display-lg text-light-on-surface text-balance">A Special Blessing For My Little Sister 💐</h1>
+
+        <p data-component-id="typography-body" data-component-type="typography" data-component-variant="body" data-design-text-token="body-lg" class="font-body text-body-lg text-light-on-surface-variant max-w-md text-pretty">Today, I have something beautiful to say to you...</p>
+      </div>
+
+      <div class="relative z-10 pt-gutter-xs">
+        <!-- COMPONENT: button-primary -->
+        <button id="open-blessings-btn" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" type="button" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-xl py-gutter-md rounded-full bg-light-primary text-light-on-primary font-label text-label-lg shadow-md hover:bg-light-primary-container focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold focus-visible:ring-offset-2 active:scale-95 transition-transform duration-state-change ease-state-change">
+          <span data-design-text-token="label-lg">Open Your Blessings ✨</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+  <!-- MAIN WEDDING BLESSINGS CONTENT                            -->
+  <!-- ========================================================= -->
+  <main id="main-blessings-content" class="relative z-20" hidden>
+
+    <!-- ======================================================= -->
+    <!-- 2. WELCOME SECTION                                      -->
+    <!-- ======================================================= -->
+    <section id="welcome-section" class="relative py-section px-page-margin bg-cream-paper overflow-hidden">
+      <div aria-hidden="true" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-champagne-mist/80 blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-gutter-xl">
+        <div class="flex justify-center">
+          <div class="relative p-gutter-sm rounded-xl bg-light-surface-container-lowest shadow-md border border-champagne-gold/50 animate-float-slow max-w-xs w-full">
+            <img src="https://lh3.googleusercontent.com/aida/ALJJyrCch2RfKCuBqB4fqdl0kX9OWSjpYFp0LrwfbZ67T1XV2NyjoE-MAlApevd8t8FDJdf3bJga8aLL5dhubZ9oCznMkiRxI0UnI0MUpPk9oAs5jbqUldG3ZbeT7hZT9LH2DbMRDSknElzGNMqaVEcVrocaa6xoMqn0fv7VU544e1bomcSaBX9HEgL_eeBotRg9bfW0b8XnZZRSjA3ErqzerWhdvzVJsAavuZkEXPAcXb7g-6FfL4lbhebhSw8ieN7QJcOyOcsVvhRE" alt="Watercolor roses, white jasmine, and champagne gold leaves" class="w-full aspect-square object-cover rounded-lg">
+            <span class="material-symbols-outlined text-champagne-gold absolute -top-3 -right-3 bg-cream-paper rounded-full p-gutter-xs shadow-sm border border-champagne-gold/40" aria-hidden="true">auto_awesome</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-gutter-md text-center md:text-left items-center md:items-start">
+          <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-light-on-surface text-balance" data-design-text-token="headline-lg">For My Beautiful Little Sister 🌸</h2>
+
+          <p class="font-body text-body-lg text-light-on-surface-variant max-w-prose text-pretty" data-design-text-token="body-lg">Life gives us many beautiful relationships, and some become family even without sharing the same blood.</p>
+
+          <p class="font-body text-body-lg text-light-on-surface-variant max-w-prose text-pretty" data-design-text-token="body-lg">Today, I want to celebrate you, your happiness, your new journey, and all the beautiful moments waiting for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 3. PHOTO MEMORIES GALLERY                               -->
+    <!-- ======================================================= -->
+    <section id="memories-section" class="relative py-section px-page-margin bg-gradient-to-b from-champagne-mist/50 via-blush-mist/40 to-cream-paper overflow-hidden">
+      <div class="relative z-10 max-w-5xl mx-auto flex flex-col gap-gutter-xl">
+        <header class="text-center flex flex-col items-center gap-gutter-xs">
+          <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-light-on-surface text-balance" data-design-text-token="headline-lg">Cherished Moments Album</h2>
+          <p class="font-body text-body-md text-light-on-surface-variant max-w-md text-pretty" data-design-text-token="body-md">Tap any photograph to view it in full screen.</p>
+        </header>
+
+        <!-- Polaroid Grid with Golden Borders & Scrapbook Rotations -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter-xl items-start pt-gutter-sm">
+
+          <!-- Photo 1 -->
+          <!-- COMPONENT: card-interactive-2 -->
+          <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-photo-src="photos/memory-1.jpeg" data-photo-caption="A beautiful soul, always. ❤️" class="polaroid-card relative bg-light-surface-container-lowest p-gutter-md pb-gutter-lg rounded shadow-md border border-champagne-gold/50 cursor-pointer -rotate-2 hover:rotate-0 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold transition-transform duration-state-change ease-state-change">
+            <div aria-hidden="true" class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-champagne-mist/90 border border-champagne-gold/40 rounded-sm shadow-xs -rotate-1"></div>
+            <div class="overflow-hidden rounded-sm mb-gutter-md bg-blush-mist border border-champagne-gold/30">
+              <img src="photos/memory-1.jpeg" alt="A beautiful soul, always" class="w-full h-64 object-cover object-top wedding-photo-motion">
+            </div>
+            <p class="font-handwritten text-handwritten-lg text-center text-light-on-surface" data-design-text-token="handwritten-lg">A beautiful soul, always. ❤️</p>
+          </div>
+
+          <!-- Photo 2 -->
+          <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-photo-src="photos/memory-2.jpeg" data-photo-caption="May your smile shine forever." class="polaroid-card relative bg-light-surface-container-lowest p-gutter-md pb-gutter-lg rounded shadow-md border border-champagne-gold/50 cursor-pointer rotate-2 hover:rotate-0 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold transition-transform duration-state-change ease-state-change sm:mt-gutter-lg">
+            <div aria-hidden="true" class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-blush-soft/80 border border-champagne-gold/40 rounded-sm shadow-xs rotate-2"></div>
+            <div class="overflow-hidden rounded-sm mb-gutter-md bg-lavender-mist border border-champagne-gold/30">
+              <img src="photos/memory-2.jpeg" alt="May your smile shine forever" class="w-full h-64 object-cover object-top">
+            </div>
+            <p class="font-handwritten text-handwritten-lg text-center text-light-on-surface" data-design-text-token="handwritten-lg">May your smile shine forever.</p>
+          </div>
+
+          <!-- Photo 3 -->
+          <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-photo-src="photos/memory-3.jpeg" data-photo-caption="Beautiful memories, endless happiness." class="polaroid-card relative bg-light-surface-container-lowest p-gutter-md pb-gutter-lg rounded shadow-md border border-champagne-gold/50 cursor-pointer -rotate-1 hover:rotate-0 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold transition-transform duration-state-change ease-state-change">
+            <div aria-hidden="true" class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-champagne-mist/90 border border-champagne-gold/40 rounded-sm shadow-xs rotate-1"></div>
+            <div class="overflow-hidden rounded-sm mb-gutter-md bg-blush-mist border border-champagne-gold/30">
+              <img src="photos/memory-3.jpeg" alt="Beautiful memories, endless happiness" class="w-full h-64 object-cover object-top">
+            </div>
+            <p class="font-handwritten text-handwritten-lg text-center text-light-on-surface" data-design-text-token="handwritten-lg">Beautiful memories, endless happiness.</p>
+          </div>
+
+          <!-- Photo 4 -->
+          <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-photo-src="photos/memory-4.jpeg" data-photo-caption="My little sister, always." class="polaroid-card relative bg-light-surface-container-lowest p-gutter-md pb-gutter-lg rounded shadow-md border border-champagne-gold/50 cursor-pointer rotate-2 hover:rotate-0 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold transition-transform duration-state-change ease-state-change">
+            <div aria-hidden="true" class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-lavender-soft/90 border border-champagne-gold/40 rounded-sm shadow-xs -rotate-2"></div>
+            <div class="overflow-hidden rounded-sm mb-gutter-md bg-lavender-mist border border-champagne-gold/30">
+              <img src="photos/memory-4.jpeg" alt="My little sister, always" class="w-full h-64 object-cover object-top">
+            </div>
+            <p class="font-handwritten text-handwritten-lg text-center text-light-on-surface" data-design-text-token="handwritten-lg">My little sister, always.</p>
+          </div>
+
+          <!-- Photo 5 -->
+          <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-photo-src="photos/memory-5.jpeg" data-photo-caption="The beginning of a beautiful new chapter." class="polaroid-card relative bg-light-surface-container-lowest p-gutter-md pb-gutter-lg rounded shadow-md border border-champagne-gold/50 cursor-pointer -rotate-2 hover:rotate-0 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold transition-transform duration-state-change ease-state-change sm:mt-gutter-lg">
+            <div aria-hidden="true" class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-champagne-mist/90 border border-champagne-gold/40 rounded-sm shadow-xs rotate-1"></div>
+            <div class="overflow-hidden rounded-sm mb-gutter-md bg-blush-mist border border-champagne-gold/30">
+              <img src="photos/memory-5.jpeg" alt="The beginning of a beautiful new chapter" class="w-full h-64 object-cover object-top">
+            </div>
+            <p class="font-handwritten text-handwritten-lg text-center text-light-on-surface" data-design-text-token="handwritten-lg">The beginning of a beautiful new chapter.</p>
+          </div>
+
+          <!-- Photo 6 -->
+          <div role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" data-photo-src="photos/memory-6.jpeg" data-photo-caption="May your life always be filled with love and laughter." class="polaroid-card relative bg-light-surface-container-lowest p-gutter-md pb-gutter-lg rounded shadow-md border border-champagne-gold/50 cursor-pointer rotate-1 hover:rotate-0 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold transition-transform duration-state-change ease-state-change">
+            <div aria-hidden="true" class="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-blush-soft/80 border border-champagne-gold/40 rounded-sm shadow-xs -rotate-1"></div>
+            <div class="overflow-hidden rounded-sm mb-gutter-md bg-lavender-mist border border-champagne-gold/30">
+              <img src="photos/memory-6.jpeg" alt="May your life always be filled with love and laughter" class="w-full h-64 object-cover object-top">
+            </div>
+            <p class="font-handwritten text-handwritten-lg text-center text-light-on-surface" data-design-text-token="handwritten-lg">May your life always be filled with love and laughter.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 4. WEDDING BLESSINGS SECTION                            -->
+    <!-- ======================================================= -->
+    <section id="blessings-section" class="py-section px-page-margin bg-cream-paper">
+      <div class="max-w-5xl mx-auto flex flex-col gap-gutter-xl">
+        <header class="text-center flex flex-col items-center gap-gutter-xs">
+          <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-light-on-surface text-balance" data-design-text-token="headline-lg">Blessings For Your New Journey 💍</h2>
+          <p class="font-body text-body-md text-light-on-surface-variant max-w-md text-pretty" data-design-text-token="body-md">
+            Eight heartfelt wishes for every step ahead of you.
+          </p>
+        </header>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-lg items-stretch">
+          <article data-component-id="card-elevated-blush" data-component-type="card" data-component-variant="elevated" style="animation-delay: 0s;" class="animate-float-slow h-full bg-blush-mist/70 border border-champagne-gold/40 rounded-lg p-gutter-lg shadow-sm flex flex-col gap-gutter-sm">
+            <span class="material-symbols-outlined text-rose-gold text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">favorite</span>
+            <p class="font-body text-body-md text-light-on-surface text-pretty" data-design-text-token="body-md">May your married life be filled with endless love, understanding, and respect.</p>
+          </article>
+
+          <article data-component-id="card-elevated-champagne" data-component-type="card" data-component-variant="elevated" style="animation-delay: 0.4s;" class="animate-float-slow h-full bg-champagne-mist/80 border border-champagne-gold/40 rounded-lg p-gutter-lg shadow-sm flex flex-col gap-gutter-sm">
+            <span class="material-symbols-outlined text-champagne-gold text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">sunny</span>
+            <p class="font-body text-body-md text-light-on-surface text-pretty" data-design-text-token="body-md">May you always find happiness in each other&#39;s company.</p>
+          </article>
+
+          <article data-component-id="card-elevated-lavender" data-component-type="card" data-component-variant="elevated" style="animation-delay: 0.8s;" class="animate-float-slow h-full bg-lavender-mist/80 border border-champagne-gold/40 rounded-lg p-gutter-lg shadow-sm flex flex-col gap-gutter-sm">
+            <span class="material-symbols-outlined text-light-secondary text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">home</span>
+            <p class="font-body text-body-md text-light-on-surface text-pretty" data-design-text-token="body-md">May your home be filled with laughter, peace, and countless beautiful memories.</p>
+          </article>
+
+          <article data-component-id="card-elevated-cream" data-component-type="card" data-component-variant="elevated" style="animation-delay: 1.2s;" class="animate-float-slow h-full bg-light-surface-container-lowest border border-champagne-gold/40 rounded-lg p-gutter-lg shadow-sm flex flex-col gap-gutter-sm">
+            <span class="material-symbols-outlined text-rose-gold text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">diversity_1</span>
+            <p class="font-body text-body-md text-light-on-surface text-pretty" data-design-text-token="body-md">May every challenge make your bond stronger.</p>
+          </article>
+
+          <article data-component-id="card-elevated-cream" data-component-type="card" data-component-variant="elevated" style="animation-delay: 0.2s;" class="animate-float-slow h-full bg-light-surface-container-lowest border border-champagne-gold/40 rounded-lg p-gutter-lg shadow-sm flex flex-col gap-gutter-sm">
+            <span class="material-symbols-outlined text-champagne-gold text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">verified</span>
+            <p class="font-body text-body-md text-light-on-surface text-pretty" data-design-text-token="body-md">May you always be valued, respected, loved, and supported.</p>
+          </article>
+
+          <article data-component-id="card-elevated-lavender" data-component-type="card" data-component-variant="elevated" style="animation-delay: 0.6s;" class="animate-float-slow h-full bg-lavender-mist/80 border border-champagne-gold/40 rounded-lg p-gutter-lg shadow-sm flex flex-col gap-gutter-sm">
+            <span class="material-symbols-outlined text-light-secondary text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">auto_awesome</span>
+            <p class="font-body text-body-md text-light-on-surface text-pretty" data-design-text-token="body-md">May your dreams come true and your future be brighter than you imagined.</p>
+          </article>
+
+          <article data-component-id="card-elevated-champagne" data-component-type="card" data-component-variant="elevated" style="animation-delay: 1s;" class="animate-float-slow h-full bg-champagne-mist/80 border border-champagne-gold/40 rounded-lg p-gutter-lg shadow-sm flex flex-col gap-gutter-sm">
+            <span class="material-symbols-outlined text-champagne-gold text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">spa</span>
+            <p class="font-body text-body-md text-light-on-surface text-pretty" data-design-text-token="body-md">May God bless you both with happiness, prosperity, patience, and lifelong companionship.</p>
+          </article>
+
+          <article data-component-id="card-elevated-blush" data-component-type="card" data-component-variant="elevated" style="animation-delay: 1.4s;" class="animate-float-slow h-full bg-blush-mist/70 border border-champagne-gold/40 rounded-lg p-gutter-lg shadow-sm flex flex-col gap-gutter-sm">
+            <span class="material-symbols-outlined text-rose-gold text-headline-md" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">sentiment_satisfied</span>
+            <p class="font-body text-body-md text-light-on-surface text-pretty" data-design-text-token="body-md">May your smile never fade and may happiness always find its way to you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 5. HEARTFELT LETTER FROM YOUR BHAI                      -->
+    <!-- ======================================================= -->
+    <section id="letter-section" class="py-section px-page-margin bg-gradient-to-b from-lavender-mist/50 via-blush-mist/40 to-champagne-mist/50">
+      <div class="max-w-2xl mx-auto flex flex-col items-center gap-gutter-xl">
+        <header class="text-center flex flex-col items-center gap-gutter-xs">
+          <h2 class="font-headline text-headline-lg-mobile md:text-headline-lg text-light-on-surface text-balance" data-design-text-token="headline-lg">A Letter From Your Bhai 💌</h2>
+          <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">
+            Tap the envelope to open my letter to you.
+          </p>
+        </header>
+
+        <div id="envelope-container" class="w-full flex flex-col items-center gap-gutter-lg envelope-closed">
+          <button id="envelope-toggle-btn" type="button" aria-expanded="false" class="relative w-full max-w-md h-52 rounded-lg bg-champagne-mist border-2 border-champagne-gold/60 shadow-md overflow-hidden cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold group">
+            <div class="absolute inset-0 bg-gradient-to-b from-blush-mist to-champagne-mist"></div>
+            <div class="envelope-flap absolute top-0 left-0 right-0 h-28 bg-cream-paper border-b border-champagne-gold/50 shadow-sm z-20" style="clip-path: polygon(0 0, 100% 0, 50% 100%);"></div>
+
+            <div class="relative z-30 flex flex-col items-center justify-center gap-gutter-xs pt-gutter-lg px-gutter-md">
+              <span class="w-12 h-12 rounded-full bg-light-primary text-light-on-primary border-2 border-champagne-gold/70 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-state-change">
+                <span class="material-symbols-outlined" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">favorite</span>
+              </span>
+              <span id="envelope-cta-text" class="font-handwritten text-handwritten-md text-light-primary whitespace-nowrap" data-design-text-token="handwritten-md">Open letter</span>
+            </div>
+          </button>
+
+          <article class="letter-sheet w-full bg-cream-paper border-2 border-champagne-gold/50 rounded-lg p-gutter-lg sm:p-gutter-xl shadow-lg flex flex-col gap-gutter-md">
+            <p class="font-handwritten text-handwritten-lg text-light-primary" data-design-text-token="handwritten-lg">Dear Little Sister,</p>
+            <p class="font-body text-body-lg text-light-on-surface text-pretty" data-design-text-token="body-lg">I don&#39;t know if I can ever express how special you are to me.</p>
+            <p class="font-body text-body-lg text-light-on-surface text-pretty" data-design-text-token="body-lg">Today, as you begin a beautiful new chapter of your life, I want you to know how genuinely happy I am for you.</p>
+            <p class="font-body text-body-lg text-light-on-surface text-pretty" data-design-text-token="body-lg">You may not be my sister by blood, but you have always held a special place in my heart, just like a little sister.</p>
+            <p class="font-body text-body-lg text-light-on-surface text-pretty" data-design-text-token="body-lg">I may not have an expensive gift to give you, but I wanted to create something with my own effort, something you can keep and revisit whenever you want.</p>
+            <p class="font-body text-body-lg text-light-on-surface text-pretty" data-design-text-token="body-lg">May your new journey be filled with love, laughter, respect, understanding, and endless happiness.</p>
+            <p class="font-body text-body-lg text-light-on-surface text-pretty" data-design-text-token="body-lg">May you always be surrounded by people who value you, support you, and make you smile.</p>
+            <p class="font-body text-body-lg text-light-on-surface text-pretty" data-design-text-token="body-lg">Never forget that you will always have a brother-like friend cheering for you, praying for your happiness, and wishing the very best for your life.</p>
+            <p class="font-body text-body-lg text-light-on-surface text-pretty" data-design-text-token="body-lg">No matter how much life changes, this bond will always remain special.</p>
+            <p class="font-body text-body-lg text-light-on-surface font-bold text-pretty" data-design-text-token="body-lg">Stay happy. Stay blessed. Keep smiling.</p>
+            <div class="pt-gutter-sm flex flex-col gap-gutter-xs">
+              <p class="font-handwritten text-handwritten-lg text-light-primary" data-design-text-token="handwritten-lg">With lots of love and blessings,</p>
+              <p class="font-handwritten text-handwritten-lg text-light-primary" data-design-text-token="handwritten-lg">Your Bhai ❤️</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 6. MARRIAGE BLESSINGS & DUA                             -->
+    <!-- ======================================================= -->
+    <section id="dua-section" class="relative py-section px-page-margin overflow-hidden">
+      <img src="https://lh3.googleusercontent.com/aida/ALJJyrCch2RfKCuBqB4fqdl0kX9OWSjpYFp0LrwfbZ67T1XV2NyjoE-MAlApevd8t8FDJdf3bJga8aLL5dhubZ9oCznMkiRxI0UnI0MUpPk9oAs5jbqUldG3ZbeT7hZT9LH2DbMRDSknElzGNMqaVEcVrocaa6xoMqn0fv7VU544e1bomcSaBX9HEgL_eeBotRg9bfW0b8XnZZRSjA3ErqzerWhdvzVJsAavuZkEXPAcXb7g-6FfL4lbhebhSw8ieN7QJcOyOcsVvhRE" alt aria-hidden="true" class="absolute inset-0 w-full h-full object-cover">
+      <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-champagne-mist/85 via-cream-paper/85 to-blush-mist/85"></div>
+
+      <div class="relative z-10 max-w-2xl mx-auto bg-cream-paper/95 border-2 border-champagne-gold/60 rounded-xl p-gutter-lg sm:p-gutter-xl shadow-xl text-center flex flex-col items-center gap-gutter-lg">
+        <div aria-hidden="true" class="absolute inset-3 border border-champagne-gold/30 rounded-lg pointer-events-none"></div>
+
+        <div class="relative z-10 flex items-center gap-gutter-sm text-champagne-gold">
+          <span class="material-symbols-outlined animate-twinkle" aria-hidden="true">auto_awesome</span>
+          <span class="material-symbols-outlined text-rose-gold" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">local_florist</span>
+          <span class="material-symbols-outlined animate-twinkle" style="animation-delay: 0.7s;" aria-hidden="true">auto_awesome</span>
+        </div>
+
+        <h2 class="relative z-10 font-headline text-headline-lg-mobile md:text-headline-lg text-light-on-surface text-balance" data-design-text-token="headline-lg">My Prayers For Your Happiness 🤲</h2>
+
+        <div class="relative z-10 flex flex-col gap-gutter-md max-w-prose text-pretty">
+          <p class="font-body text-body-lg text-light-on-surface" data-design-text-token="body-lg">
+            May God bless your new journey with endless happiness, peace, love, prosperity, and understanding.
+          </p>
+          <p class="font-body text-body-lg text-light-on-surface" data-design-text-token="body-lg">
+            May your relationship always be filled with respect, patience, kindness, and trust.
+          </p>
+          <p class="font-body text-body-lg text-light-on-surface" data-design-text-token="body-lg">
+            May you both grow together, support each other through every season of life, and create a lifetime of beautiful memories.
+          </p>
+          <p class="font-body text-body-lg text-light-on-surface" data-design-text-token="body-lg">
+            May your home always be filled with laughter, warmth, and blessings.
+          </p>
+          <p class="font-body text-body-lg text-light-on-surface" data-design-text-token="body-lg">
+            May all your dreams come true.
+          </p>
+          <p class="font-handwritten text-handwritten-lg text-light-primary pt-gutter-xs" data-design-text-token="handwritten-lg">
+            Wishing you a lifetime of happiness. ❤️
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 7. FINAL SURPRISE SCREEN                                -->
+    <!-- ======================================================= -->
+    <section id="final-surprise" class="relative py-section px-page-margin bg-gradient-to-b from-blush-mist/60 via-lavender-mist/60 to-champagne-mist/80 overflow-hidden">
+      <div aria-hidden="true" class="absolute inset-0 pointer-events-none overflow-hidden">
+        <span class="w-2.5 h-2.5 rounded-full bg-champagne-gold/80 absolute top-4 left-[15%]" style="animation: confettiFall 4.5s linear infinite;"></span>
+        <span class="w-2 h-3 rounded-sm bg-blush-petal absolute top-4 left-[35%]" style="animation: confettiFall 5.2s linear infinite 0.8s;"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-rose-gold/80 absolute top-4 left-[55%]" style="animation: confettiFall 4.8s linear infinite 1.4s;"></span>
+        <span class="w-2 h-3 rounded-sm bg-lavender-soft absolute top-4 left-[75%]" style="animation: confettiFall 5.5s linear infinite 0.3s;"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-champagne-gold/80 absolute top-4 left-[88%]" style="animation: confettiFall 4.2s linear infinite 1.9s;"></span>
+
+        <span class="material-symbols-outlined text-champagne-gold absolute top-12 left-8 animate-twinkle">auto_awesome</span>
+        <span class="material-symbols-outlined text-rose-gold absolute bottom-16 right-10 animate-twinkle" style="animation-delay: 0.9s;">favorite</span>
+        <span class="material-symbols-outlined text-light-primary/60 absolute top-20 right-12 animate-float-slow">local_florist</span>
+      </div>
+
+      <div class="relative z-10 max-w-xl mx-auto text-center bg-cream-paper/85 border border-champagne-gold/50 rounded-xl p-gutter-lg sm:p-gutter-xl shadow-lg flex flex-col items-center gap-gutter-lg">
+        <div class="flex items-center justify-center gap-gutter-sm text-champagne-gold">
+          <span class="material-symbols-outlined animate-twinkle" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined text-rose-gold animate-float-slow" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">favorite</span>
+          <span class="material-symbols-outlined animate-twinkle" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+        </div>
+
+        <blockquote class="flex flex-col gap-gutter-sm">
+          <p class="font-headline text-headline-lg-mobile md:text-headline-lg text-light-on-surface text-balance" data-design-text-token="headline-lg">
+            Today begins a beautiful new chapter of your life...
+          </p>
+          <p class="font-body text-body-lg text-light-on-surface-variant text-pretty" data-design-text-token="body-lg">
+            May every page be filled with happiness, love, beautiful memories, and countless blessings.
+          </p>
+          <p class="font-headline text-headline-md text-light-primary text-balance" data-design-text-token="headline-md">
+            You will always be my little sister.
+          </p>
+          <p class="font-body text-body-lg text-light-on-surface-variant text-pretty" data-design-text-token="body-lg">
+            And no matter where life takes you, I&#39;ll always wish the very best for you. 🫂
+          </p>
+        </blockquote>
+
+        <div class="pt-gutter-sm">
+          <!-- COMPONENT: button-with-icon -->
+          <button id="replay-blessings-btn" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" type="button" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-xl py-gutter-md rounded-full bg-light-primary text-light-on-primary font-label text-label-lg shadow-md hover:bg-light-primary-container focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne-gold active:scale-95 transition-transform duration-state-change ease-state-change">
+            <span class="material-symbols-outlined" aria-hidden="true">replay</span>
+            <span data-design-text-token="label-lg">Read My Blessings Again 💖</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- PHOTO LIGHTBOX DIALOG                                     -->
+  <!-- ========================================================= -->
+  <!-- COMPONENT: modal-standard -->
+  <dialog id="photo-lightbox" data-component-id="modal-standard" data-component-type="modal" data-component-variant="standard" aria-labelledby="lightbox-caption" class="rounded-lg bg-light-surface-container-lowest text-light-on-surface p-gutter-md shadow-xl border border-champagne-gold/50 max-w-lg w-[92vw] backdrop:bg-light-on-surface/75 m-auto">
+    <header class="flex items-center justify-between gap-gutter-md mb-gutter-md">
+      <h2 id="lightbox-caption" class="font-handwritten text-handwritten-lg text-light-on-surface" data-design-text-token="handwritten-lg">Memory</h2>
+      <button id="close-lightbox-btn" type="button" aria-label="Close photo lightbox" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blush-mist text-light-primary hover:bg-blush-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-light-primary">
+        <span class="material-symbols-outlined" aria-hidden="true">close</span>
+      </button>
+    </header>
+
+    <div class="overflow-hidden rounded-sm bg-blush-mist">
+      <img id="lightbox-image" src alt class="w-full max-h-[636px] object-contain" data-stitch-vh="max-h-[636px]===max-h-[72vh]">
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script></body></html>
+
+
+
+
+
